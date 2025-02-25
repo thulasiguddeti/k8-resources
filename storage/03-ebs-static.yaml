@@ -10,7 +10,7 @@ spec:
   csi:
     driver: ebs.csi.aws.com
     fsType: ext4
-    volumeHandle: vol-095b046ae862ee1ff # this is the volume ID we are created in EBS.
+    volumeHandle: vol-06c5e607fffd255dc # this is the volume ID we are created in EBS.
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
