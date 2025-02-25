@@ -5,7 +5,7 @@ metadata:
 provisioner: efs.csi.aws.com
 parameters:
   provisioningMode: efs-ap
-  fileSystemId: fs-0715ef3ca61bfe431
+  fileSystemId: fs-0715ef3ca61bfe431 # this is our EFs id created in aws for dynamic
   directoryPerms: "700"
   gidRangeStart: "1000" # optional
   gidRangeEnd: "2000" # optional
