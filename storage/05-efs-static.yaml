@@ -12,7 +12,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: fs-016a860b1f7383cac # file system id after creating the EFS in aws.
+    volumeHandle: fs-04a4e0380a7987c45 # file system id after creating the EFS in aws.
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -41,7 +41,7 @@ spec:
     - name: nginx-data
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    zone: 1b
+    zone: 1f
   volumes:
   - name: nginx-data
     persistentVolumeClaim:
