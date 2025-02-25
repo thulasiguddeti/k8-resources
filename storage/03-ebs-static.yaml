@@ -10,7 +10,7 @@ spec:
   csi:
     driver: ebs.csi.aws.com
     fsType: ext4
-    volumeHandle: vol-06c5e607fffd255dc # this is the volume ID we are created in EBS.
+    volumeHandle: vol-010d9822ea6af7062 # this is the volume ID we are created in EBS.
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -39,7 +39,7 @@ spec:
     - name: nginx-data
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    zone: 1c
+    zone: 1f
   volumes:
   - name: nginx-data
     persistentVolumeClaim:
