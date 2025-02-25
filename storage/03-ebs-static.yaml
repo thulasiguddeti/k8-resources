@@ -50,7 +50,7 @@ kind: Service
 metadata:
   name: ebs-static
   spec:
-  type: LoadBalancer
+    type: LoadBalancer
   selector:
     demo: ebs-static
   ports:
