@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: taint-pod
+spec:
+  # list of containers
+  containers:
+  - name: hello-pod
+    image: nginx
+    #here with this line port will not be opened, just for information
+    ports:
+    - containerPort: 80
+  tolerations:
+  - key: "project"
+    operator: "Exists"
+    effect: "NoSchedule"
